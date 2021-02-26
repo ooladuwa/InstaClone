@@ -34,7 +34,7 @@ const Login = () => {
             < FaFacebookSquare className="fb"/>
             Log in with Facebook
           </p>
-          <p>Forgot Password?</p>
+          <p className="pass">Forgot Password?</p>
       </form>
       </div>
     </div>
