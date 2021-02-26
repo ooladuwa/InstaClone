@@ -1,9 +1,14 @@
 .app {
+  padding-top:1.5rem;
+  max-height:60%;
+  max-width:100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   background-color: #fafafa;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  
 }
 
 /* THIS IS THE CONTAINER FOR THE PHONES IMAGE AND FORM BOX */
@@ -13,10 +18,11 @@
   align-items: stretch;
   flex-direction: row;
   width: 1244px;
-  height: 880px;
+  height: 680px;
   margin: 50px auto 0;
+ 
   max-width: 935px;
-  padding-bottom: 32px;
+  padding-bottom: 35px;
   padding-left: 120px;
 }
 
@@ -28,24 +34,35 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  margin: 0 -15px 0 -35px;
+  margin:0 -15px 0 -35px;
 }
 
 .formBox {
-  width: 350px;
-  height: 380px;
-  margin: 0 0 10px;
+  width: 21.875rem;
+  height: 23.75rem;
+  margin:  0 10px;
   margin-top: 2rem;
+  margin-bottom: 10px;
   background: #ffffff;
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-  display: flex;
+  display: flex; 
   justify-content: center;
   flex-direction: column;
+ 
+  
 }
 
-.logo {
-  width: 67%;
-  margin-left: 3.5rem;
+.contain{
+  max-height: 100%;
+  max-width:100%;
+}
+
+.logo{
+
+  width:70%;
+  height:50%;
+  margin: 10px 0 0 5px;
+  padding: 1rem 2.5rem;
   /* display: flex;
   align-items: flex-start; */
 }
@@ -54,54 +71,209 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem;
+  margin: .5rem 2rem;
 }
 
 .login2 {
   display: flex;
+  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
 
 input {
   width: 258px;
-  height: 2rem;
-  margin: 0 2rem;
+  height: 2.5rem;
+  margin: 0rem;
   padding: 0 7px 0;
   border-radius: 5px;
-  border: 0.2px solid gray;
+  border: 0.2px solid rgba(190, 177, 177, 0.795);
+  background:#fafafa;
+  font-size:12px;
+  font-weight:lighter;
 }
 
 .loginBtn {
-  width: 268px;
+  width: 274px;
   height: 30px;
   margin: 0 4.3rem;
   border-radius: 5px;
   background: #0095f6;
   color: white;
   border: none;
+  margin-left: 2rem;
+  text-align: center;
+  line-height: 1em;
+  align-items: center;
 }
+
+.lineBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.line1 {
+  height: 25px;
+  width: 100px;
+  margin: 0px;
+  border-bottom: .3px solid rgba(190, 177, 177, 0.795);
+  margin-right:2rem;
+  margin-right: 1rem;
+  
+
+  /* height: 12px;
+  border: 2px;
+  box-shadow: inset 0 12px 5px -12px rgba(144, 139, 139, 0.5); */
+}
+
+.line2 {
+  height: 25px;
+  width: 100px;
+  margin: 0px;
+  border-bottom: .3px solid rgba(190, 177, 177, 0.795);
+  margin-left:1rem;
+ 
+
+  /* height: 12px;
+  border: 2px;
+  box-shadow: inset 0 12px 5px -12px rgba(144, 139, 139, 0.5); */
+}
+
+.or{
+  padding:2px ;
+  margin:.9rem 0 0 0;
+  color: rgba(128, 128, 128, 0.795);
+  font-size:.9rem;
+  background-color: #ffffff;
+  font-weight:bold;
+  
+  
+
+}
+
+p{
+  text-align: center;
+}
+
+.facebook {
+  color: #0f659e;
+  font-weight: bold;
+}
+
+
+.facebook, svg{
+  height:16px;
+  
+}
+.fb {
+  margin:0 10px 0  0;
+}
+
 /* THIS IS THE CONTAINER FOR THE SIGN-UP */
+.signUps{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  /* border:solid 4px red; */
+  font-size: 14px;
+  margin-top:10rem;
+  padding:.6rem;
+}
 
 .signUp {
-  border: 2px solid blue;
-  width: 350px;
+  
+  width: 21.875rem;
   text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  margin-bottom: 10px;
+  margin-top:10px;
+  padding: 0 ;
+}
+
+.sup {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold; 
+  margin: 15px;
 }
 
 /* THIS IS THE CONTAINER FOR THE BUTTONS */
 
 .buttons {
-  border: 2px solid yellow;
+
+  max-height:2.5rem;
+  display:flex;
+  justify-content: center;
+  padding:0;
 }
+
+ img, .appBtn{
+  width: 9.5rem;
+  height: 3.5rem;
+  margin:0;
+  
+ }
+
+img, .googleBtn{
+  width: 9.5rem;
+  height: 3.3rem;
+  margin: 2px;
+  
+
+
+}
+
+/* .googleBtn, img{
+  width: 136px;
+  margin: 0;
+  padding: 0;
+} */
 
 /* THIS IS THE CONTAINER FOR THE FOOTER LINKS */
 .extLinks {
-  border: 2px solid green;
-  display: inline-flex;
-  flex-wrap: wrap;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #8E8E8E;
+  font-size: 12px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* flex-wrap: wrap; */
 }
 
 nav {
   margin: 2.5px;
+  padding:2px;
+}
+
+.topNav {
+  display: flex;
+  align-items: flex-start;
+ align-content: space-around;
+ justify-content: center;
+
+ 
+}
+
+.bottomNav {
+  display: flex;
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: center;
+
+ 
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: space-around;
+  align-items: center;
+  align-content: center;
+
+
 }

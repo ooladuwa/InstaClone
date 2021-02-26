@@ -2,11 +2,15 @@ import React from "react";
 
 const Stores = () => {
   return (
-    <div className="signUp">
-      <p>Get the app.</p>
-      <button>App Store</button>
-      <button>Google Play</button>
-    </div>
+    <div>
+    
+       
+       <p>Get the app.</p>
+   <div className= "buttons">
+      <img className="appBtn" src="https://i.ibb.co/bsscvkC/pngwing-com-8.png" alt="apple" />
+      <img className= "googleBtn" src="https://i.ibb.co/5TRnkjQ/pngwing-com-7.png" alt="google"/>
+      </div>
+      </div>
   );
 };
 

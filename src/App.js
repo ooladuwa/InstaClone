@@ -10,18 +10,28 @@ const App = () => {
     <div className="app">
       {/* THIS IS THE CONTAINER FOR THE PHONES IMAGE AND FORM BOX  */}
       <div className="box1">
-        <div className="phones"></div>
+
+          <div className="phones"></div> 
+           
+
         <div className="formBox">
-          <img className="logo" src="https://i.ibb.co/gPdP4X9/instagram.png" alt="logo" />
+    
+         <div className="signUps"> 
+   
+        <img className="logo" src="https://i.ibb.co/gPdP4X9/instagram.png" alt="logo" />
+        
+
           <LoginForm />
         </div>
-        <div className="signUp">
+     
           <SignupForm />
           <Stores />
-        </div>
+         </div>
+      
       </div>
-      <Footer />
-    </div>
+           
+         <Footer />
+  </div>
     
   );
 };
