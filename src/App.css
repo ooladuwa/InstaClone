@@ -77,13 +77,11 @@ height:427px;
 }
 
 .logo{
-
-  width:70%;
-  height:50%;
-  margin: 5px 0 0 5px;
-  padding:  4rem 0 2.5rem 3rem;
-  /* display: flex;
-  align-items: flex-start; */
+ padding-top:2.5rem;
+ padding-left:5rem;
+ width:55%;
+ height:4.5rem;
+ 
 }
 
 
