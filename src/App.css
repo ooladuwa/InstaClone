@@ -1,7 +1,11 @@
 
-
+body{
+  background-color: #fafafa;
+  margin:0 auto;
+}
 .app {
-  padding-top:1.5rem;
+  padding-top:2.1rem;
+  padding-right:1rem;
   max-height:60%;
   max-width:100%;
   display: flex;
@@ -26,6 +30,7 @@
   max-width: 935px;
   padding-bottom: 35px;
   padding-left: 120px;
+
 }
 
 .phones {
@@ -34,10 +39,22 @@
   /* border: 2px solid black; */
   background-image: url("https://i.ibb.co/NVqbhzv/igStatic.png");
   background-repeat: no-repeat;
-  width: 100%;
+  width: 20%;
   height: 100%;
-  margin:0 -15px 0 -35px;
+  margin:0;
+  padding:100px 60px 5px 150px;
+  flex-basis: 23.5%;
+ 
 }
+
+
+.slides{
+width: 240px;
+height:427px;
+
+}
+
+
 
 .formBox {
   width: 21.875rem;
@@ -63,11 +80,13 @@
 
   width:70%;
   height:50%;
-  margin: 10px 0 0 5px;
-  padding: 1rem 2.5rem;
+  margin: 5px 0 0 5px;
+  padding:  4rem 0 2.5rem 3rem;
   /* display: flex;
   align-items: flex-start; */
 }
+
+
 
 .login {
   display: flex;
@@ -85,11 +104,12 @@
 
 input {
   width: 258px;
-  height: 2.5rem;
+  height: 2.1rem;
   margin: 0rem;
   padding: 0 7px 0;
   border-radius: 5px;
-  border: 0.2px solid rgba(190, 177, 177, 0.795);
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+
   background:#fafafa;
   font-size:12px;
   font-weight:lighter;
@@ -98,7 +118,7 @@ input {
 .loginBtn {
   width: 274px;
   height: 30px;
-  margin: 0 4.3rem;
+  margin: .5rem 4.3rem;
   border-radius: 5px;
   background: #0095f6;
   color: white;
@@ -164,11 +184,13 @@ p{
   
 }
 .fb {
-  margin:0 10px 0  0;
+  margin:0 8px 0  0;
 }
 
 .pass{
   color:#00376B;
+  padding-top: 10px;
+  font-size: 12px;
 }
 
 /* THIS IS THE CONTAINER FOR THE SIGN-UP */
@@ -179,7 +201,7 @@ p{
   /* border:solid 4px red; */
   font-size: 14px;
   margin-top:10rem;
-  padding:.6rem;
+  padding:.6rem 0 4px 4px;
 }
 
 .signUp {
@@ -193,6 +215,10 @@ p{
   padding: 0 ;
 }
 
+.signUp, p{
+  padding: .3rem 0;
+  font-size: 14px;
+}
 .sup {
   color: #0095f6;
   text-decoration: none;
@@ -210,9 +236,16 @@ p{
   padding:0;
 }
 
+.storeBox{
+  padding:0 1rem 2rem 2rem;
+  display:flex;
+  justify-content: center;
+  
+}
+
  img, .appBtn{
   width: 9.5rem;
-  height: 3.5rem;
+  height: 3.6rem;
   margin:0;
   
  }
@@ -221,8 +254,6 @@ img, .googleBtn{
   width: 9.5rem;
   height: 3.3rem;
   margin: 2px;
-  
-
 
 }
 
@@ -241,39 +272,46 @@ img, .googleBtn{
   color: #8E8E8E;
   font-size: 12px;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  /* flex-wrap: wrap; */
+  margin-top:5px;
 }
 
 nav {
   margin: 2.5px;
-  padding:2px;
+  padding:0 5px;
 }
 
 .topNav {
   display: flex;
-  align-items: flex-start;
- align-content: space-around;
- justify-content: center;
-
- 
+  align-items: flex-end;
+ /* align-content: space-around; */
+ justify-content: center; 
 }
 
 .bottomNav {
   display: flex;
   align-items: flex-start;
-  align-content: space-around;
+  /* align-content: space-around; */
   justify-content: center;
-
+  align-content: flex-start;
  
 }
 
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: space-around;
-  align-items: center;
-  align-content: center;
+.copyBox{
+display: flex;
+flex-direction: row;
+justify-content: center;
+line-height: 0;
+margin-top: 10px;
+}
 
+.copyright, p {
+ padding: 0;
+  flex-basis:5%;
+  font-size: 12px;
+  
 
+}
+
+.copy{
+  word-spacing: 1px;
 }

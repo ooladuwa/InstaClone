@@ -25,10 +25,15 @@ const Footer = () => {
         <nav>Music</nav>
         <nav>Visual Arts</nav>
     </div>
+    <div className="copyBox">
     <div className="copyright">
         {/* English drop down */}
         {/* <p>English ^</p> */}
-        <p>English ⌵ ©2021 Instagram from Facebook</p>
+        <p>English ⌵</p>
+       </div>
+      <div className="copy"> <p>©2021 Instagram from Facebook</p>
+     
+      </div>
       </div>
     </div> 
   ); 

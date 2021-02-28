@@ -1,21 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 
 
 
 const Login = () => {
+  const [state, setState]=useState([]);
+  const [username, setUsername]=useState("");
+  const [phoneNumber, setPhoneNumber]=useState("");
+  const [email, setEmail]=useState("");
+  const [password, setPassword]=useState("");
+
+  
   return (
     <div>
       <div>
 
-     
-         
       <form> 
         <div className="login">
-          <input type="text" placeholder="Phone number, username, or email" />
+          <input 
+          type="text" 
+        
+          placeholder="Phone number, username, or email" />
         </div>
         <div className="login">
-          <input type="text" placeholder="Password" />
+          <input 
+          type="text" 
+          placeholder="Password" />
         </div>
         <div className="login2">
           <button className="login loginBtn">Log In</button>

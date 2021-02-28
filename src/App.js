@@ -4,14 +4,18 @@ import LoginForm from "./components/landingPage/LoginForm";
 import SignupForm from "./components/landingPage/SignupForm";
 import Stores from "./components/landingPage/Stores";
 import Footer from "./components/landingPage/Footer";
+import Phones from "./components/landingPage/Phones";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="app"> 
       {/* THIS IS THE CONTAINER FOR THE PHONES IMAGE AND FORM BOX  */}
       <div className="box1">
-
-          <div className="phones"></div> 
+    
+          <div className="phones">
+          <Phones/>
+       
+            </div> 
            
 
         <div className="formBox">
