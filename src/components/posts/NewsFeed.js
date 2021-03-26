@@ -1,14 +1,21 @@
 import React from 'react'
+import Post from "./Post"
+import "./NewsFeed.css"
 
 const NewsFeed = () => {
-    return (
-        <div>
-          <h1> this is the header</h1>
+  return(
+ 
+    <div className="display-box">
+  
+    <Post/>
 
-          <h2>this is where we will render the individual posts</h2>
-            
-        </div>
-    )
+    
+   <div className="suggestions">
+  </div>
+  </div>
+
+  )
+ 
 }
 
 export default NewsFeed

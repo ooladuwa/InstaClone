@@ -2,22 +2,14 @@
 body{
   background-color: #fafafa;
   margin:0 auto;
-}
-.app {
-  padding-top:2.1rem;
-  padding-right:1rem;
-  max-height:60%;
-  max-width:100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  background-color: #fafafa;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  
 }
 
 /* THIS IS THE CONTAINER FOR THE PHONES IMAGE AND FORM BOX */
+.app{
+
+}
 .box1 {
   /* border: 3px dotted orange; */
   display: inline-flex;
@@ -25,12 +17,11 @@ body{
   flex-direction: row;
   width: 1244px;
   height: 680px;
-  margin: 50px auto 0;
- 
+  margin: 84px auto 0;
   max-width: 935px;
-  padding-bottom: 35px;
-  padding-left: 120px;
-
+  padding-bottom: 37px;
+  padding-left: 96px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 
 .phones {
@@ -77,10 +68,9 @@ height:427px;
 }
 
 .logo{
- padding-top:2.5rem;
- padding-left:5rem;
- width:55%;
- height:4.5rem;
+ padding:3.6rem 5.5rem 1.5rem 0;
+ margin:0 5.3rem;
+ width:170px;
  
 }
 
@@ -105,9 +95,8 @@ input {
   height: 2.1rem;
   margin: 0rem;
   padding: 0 7px 0;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid rgba(var(--b6a,219,219,219),1);
-
   background:#fafafa;
   font-size:12px;
   font-weight:lighter;
@@ -312,4 +301,71 @@ margin-top: 10px;
 
 .copy{
   word-spacing: 1px;
+}
+
+
+@media (max-width:800px) {
+
+  .phones{
+   /* opacity:0; */
+   /* width:0px;
+   height:0px; */
+   border:2px solid red;
+  }
+
+  .box1{
+    position:relative;
+    right:20%;
+    bottom:10%;
+    overflow-x:hidden;
+  }
+
+  .login {
+    border:2px solid red;
+   
+  }
+
+ 
+  
+  .extLinks {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #8E8E8E;
+    font-size: 12px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin-top:5px;
+    width:300px;
+    position:relative;
+    left:35%;
+  }
+
+  nav {
+    margin: 2.5px;
+    padding:0 5px;
+  }
+  
+  .topNav {
+    display: flex;
+  
+ 
+   justify-content: center; 
+  }
+  
+  .bottomNav {
+    display: flex;
+ 
+    /* align-content: space-around; */
+    justify-content: center;
+    
+   
+  }
+  
+  .login {
+    display: flex;
+    
+    
+
+  }
 }

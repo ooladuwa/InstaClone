@@ -1,10 +1,27 @@
+
+
+.postBox{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    /* border: 1px solid rgb(226, 48, 48); */
+    margin-top:2rem;
+    object-fit: contain;
+    
+}
+
 .post {
     background-color: white;
-    max-width: 500px;
+    width:614px;
     border: 1px solid lightgray;
+    max-height:800px;
+    object-fit: contain;
 }
+
 .postImage {
     width: 100%;
+    min-height:60%;
+    max-height: fit-content;
     object-fit: contain;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;

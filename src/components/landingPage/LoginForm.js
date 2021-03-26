@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
+import {Link} from "react-router-dom"
 
 const Login = () => {
   return (
@@ -13,9 +14,9 @@ const Login = () => {
             <input type="text" placeholder="Password" />
           </div>
           <div className="login2">
-            <button className="loginBtn">Log In</button>
+          <Link to="/NewsFeed"> <button className="loginBtn">Log In</button></Link>
           </div>
-
+          {/* ../posts/Post.js */}
           {/* <div className='line'>OR</div>  */}
 
           <div className="lineBox">
