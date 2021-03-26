@@ -17,7 +17,7 @@ export default function LikeBar() {
             <Link to="/" ><IoPaperPlaneOutline className='icon' /></Link>
         </div>
         <div className='right active'>
-            <Link to="/" ><{...active ? FaRegBookmark : FaBookmark} className='icon' /></Link>
+            <Link to="/" ><FaRegBookmark className='icon' /></Link>
         </div>
     </div>
   )

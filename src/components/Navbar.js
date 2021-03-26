@@ -32,10 +32,11 @@ const Navbar = () => {
           </div>
 
           <div className='navbar-icons'>
-            {/* <input {showSearch ? <input className='input'
+            <button onClick={toggleSearch}><AiOutlineSearch className='media-icon'/></button>
+            {showSearch ? <input className='input'
                 type='text'
                 name='query'
-                placeholder='Search'/> : null} onClick={toggleSearch}><AiOutlineSearch className='media-icon'/></input> */}
+                placeholder='Search'/> : null}
             <Link to="/"><AiFillHome className='icon' /></Link>
             <Link to="/" ><IoPaperPlaneOutline className='icon' /></Link>
             <Link to="/" ><RiCompassDiscoverLine className='icon' /></Link>
