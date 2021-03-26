@@ -1,9 +1,12 @@
-import React from 'react'
+import React  from 'react'
 import Avatar from '@material-ui/core/Avatar'
 import "./posts.css";
 import LikeBar from "./LikeBar"
 
 const Post = () => {
+  
+
+
     return (
         <div className="postBox">
     
@@ -23,7 +26,7 @@ const Post = () => {
             {/* image */}
             
             <LikeBar />
-            
+           
             {/* username and caption  */}
             <h4 className="postText"><strong>JPollock:</strong>The Old Homestead</h4>
             

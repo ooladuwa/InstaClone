@@ -3,6 +3,10 @@ import Post from "./Post"
 import "./NewsFeed.css"
 
 const NewsFeed = () => {
+ 
+ 
+
+
   return(
  
     <div className="display-box">
