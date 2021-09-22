@@ -1,12 +1,14 @@
 
-
 .postBox{
     display:flex;
     justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;
     /* border: 1px solid rgb(226, 48, 48); */
     margin-top:2rem;
     object-fit: contain;
+    margin:1rem;
+
     
 }
 
@@ -14,13 +16,16 @@
     background-color: white;
     width:614px;
     border: 1px solid lightgray;
-    max-height:800px;
+    min-height:600px;
     object-fit: contain;
+    margin:2rem 0;
+    height:100%;
 }
 
 .postImage {
     width: 100%;
     min-height:60%;
+    height:600px;
     max-height: fit-content;
     object-fit: contain;
     border-top: 1px solid lightgray;
@@ -29,7 +34,7 @@
 
 .postText {
     font-weight: normal;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .postHeader {
@@ -40,4 +45,184 @@
 
 .postAvatar {
     margin-right: 10px;
+}
+
+
+.profile{
+    display:grid;
+    grid-template-rows: 2fr 6fr 1fr;
+    padding: 1.5% 30%; 
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+   
+}
+
+.pro-header{
+    display:grid;
+    grid-template-columns: 2fr 4fr;
+    border-bottom:1px solid #dbdbdb;
+    padding-bottom:2rem;
+}
+
+.profile-pic{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+}
+
+.first-line{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+    max-width:420px;
+    margin-left:-1rem;
+}
+
+.edit-pro{
+    font-size:14px;
+    color:#262626;
+    border:1px solid #dbdbdb;
+    width:89.2px;
+    height:25px;
+    padding:5px 9px;
+    text-align:center;
+    border-radius:4px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left:1rem;
+    margin-bottom:0;
+
+}
+
+.pro-name{
+    font-size:28px;
+    color:#262626;
+    font-weight:400;
+    margin-bottom:0;
+
+}
+
+.gear{
+    height:30px;
+    width:30px;
+    color:#262626;
+    margin-bottom:0;
+
+}
+
+.sec-line{
+    display: flex;
+    width:100%;
+}
+.following{
+    font-size:16px;
+    margin-top:0;
+    font-weight:400;
+}
+
+.grid{
+    height:13px;
+    width:13px;
+    padding:2px;
+    padding-bottom: 0;
+}
+
+.pro-posts{
+    margin-top:0;
+    text-align:center;
+    font-weight:400;
+}
+
+.pic-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1rem;
+}
+
+.ig-pics{
+    width:228px;
+    height:228px;
+}
+
+@media screen and (max-width:1200px) {
+     .profile{
+        grid-template-rows: 1fr 3fr 1fr;
+        padding: 1.5% 15%;
+     }
+
+}
+
+@media screen and (max-width:950px) {
+    .profile{
+       padding: 1.5% 10%;
+    }
+
+    .pic-grid{
+        grid-gap:.5rem;
+    }
+}
+@media screen and (max-width:750px) {
+    .profile{
+       /* padding: 1.5% 5%; */
+       width:90vw;
+       font-size:10px;
+    }
+.pic-grid{
+    grid-gap:2px;
+}
+    .first-line{
+        font-size:10px;
+    }
+
+    .profile-pic{
+        height:100px;
+        width:100px;
+     }
+    .ig-pics{
+        width:175px;
+        height:175px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .profile{
+       grid-template-rows: 1fr 3fr 1fr;
+       padding: 1.5% 5%;
+    }
+    .pic-grid{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .gear{
+        display:none;
+    }
+        .edit-pro{
+            display: none;
+        }
+    .ig-pics{
+        width:125px;
+        height:125px;
+    }
+    .first-line{
+        display: none;
+       
+    }
+}
+
+@media screen and (max-width:300px) {
+    .profile{
+       padding: 1.5% 5%;
+    }
+  
+
+    .ig-pics{
+        width:125px;
+        height:125px;
+    }
+   
+        .pro-name{
+            display: none;
+    
+        }
 }

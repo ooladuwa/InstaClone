@@ -10,17 +10,25 @@ import {Switch, Route} from "react-router-dom"
 import Home from "./Home"
 import NewsFeed from "./components/posts/NewsFeed"
 import Navbar from "./components/Navbar";
+import Register from "./components/landingPage/Register";
+import Profile from "./components/Profile";
 
 
 
 
 const App = () => {
   return (
-    <div>
+    <div >
 
     <div className="app">
     
         <Switch>
+          <Route path ="/Profile">
+            <Profile/>
+            </Route>
+          <Route path ="/Register">
+            <Register/>
+          </Route>
         <Route path='/NewsFeed'>
           <Navbar/>
           <NewsFeed />          

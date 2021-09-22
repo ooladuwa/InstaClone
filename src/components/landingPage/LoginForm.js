@@ -4,8 +4,8 @@ import {Link} from "react-router-dom"
 
 const Login = () => {
   return (
-    <div>
-      <div>
+    <div >
+      <div >
         <form>
           <div className="login">
             <input type="text" placeholder="Phone number, username, or email" />

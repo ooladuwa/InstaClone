@@ -1,4 +1,52 @@
 .likebar-icons {
   display: flex;
   justify-content: space-between;
+
+
 }
+
+.likes{
+  border:none;
+  color:white;
+  background-color: #FFFFFF;
+ 
+}
+
+.likes{
+ color:red;
+ border:none;
+ background-color: #FFFFFF;
+ outline:#FFFFFF;
+
+}
+
+button.icon-heart2{
+ background-color: #FFFFFF;
+ border:#FFFFFF;
+}
+
+
+.icon-heart{
+  border:#FFFFFF;
+ font-size: 45px;
+ height: 22px;
+ width: 22px;
+ margin: .4rem;
+ max-height:90%;
+ background-color: #FFFFFF;
+}
+
+.icon-heart:active{
+  color:red;
+  font-size: 45px;
+  height: 22px;
+  width: 22px;
+  margin: .4rem;
+  max-height:90%;
+ background-color: #FFFFFF;
+
+ }
+
+ .likedBy{
+   margin-left:1rem;
+ }

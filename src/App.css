@@ -7,9 +7,7 @@ body{
 }
 
 /* THIS IS THE CONTAINER FOR THE PHONES IMAGE AND FORM BOX */
-.app{
 
-}
 .box1 {
   /* border: 3px dotted orange; */
   display: inline-flex;
@@ -244,11 +242,7 @@ img, .googleBtn{
 
 }
 
-/* .googleBtn, img{
-  width: 136px;
-  margin: 0;
-  padding: 0;
-} */
+
 
 /* THIS IS THE CONTAINER FOR THE FOOTER LINKS */
 .extLinks {
@@ -272,6 +266,7 @@ nav {
   align-items: flex-end;
  /* align-content: space-around; */
  justify-content: center; 
+ width:100%;
 }
 
 .bottomNav {
@@ -303,41 +298,36 @@ margin-top: 10px;
   word-spacing: 1px;
 }
 
+a{
+  text-decoration: none;
+  cursor:pointer;
+}
+
+button{
+  cursor:pointer;
+
+}
 
 @media (max-width:800px) {
 
-  .phones{
-   /* opacity:0; */
-   /* width:0px;
-   height:0px; */
-   border:2px solid red;
-  }
-
-  .box1{
-    position:relative;
-    right:20%;
-    bottom:10%;
+  .app{
     overflow-x:hidden;
-  }
 
-  .login {
-    border:2px solid red;
-   
   }
-
+  .phones{
+   opacity:0; 
+   width:0px;
+   height:0px;
+  }
+ 
+  footer{
+    display:none;
+  }
+  
   
   .extLinks {
-    /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #8E8E8E;
-    font-size: 12px;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    margin-top:5px;
-    width:300px;
-    position:relative;
-    left:35%;
+    display:none;
+   
   }
 
   nav {
@@ -366,5 +356,9 @@ margin-top: 10px;
     
     
 
+  }
+
+  .main-nav{
+    width:100%;
   }
 }

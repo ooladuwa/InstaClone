@@ -1,5 +1,7 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
+import {Link} from "react-router-dom"
+
 
 const SignUp = () => {
   return (
@@ -7,6 +9,7 @@ const SignUp = () => {
       {/* logo goes here */}
       <div className="formBox">
         <form>
+          
           <p className="facebook">
             <FaFacebookSquare className="fb" />
             Log in with Facebook
@@ -24,7 +27,7 @@ const SignUp = () => {
             <input type="text" placeholder="Username" />
             <input type="text" placeholder="Password" />
 
-            <button className="loginBtn">Sign Up</button>
+            <Link to="/NewsFeed"><button  className="loginBtn">Sign Up</button></Link>
             <p>
               By signing up, you agree to our Terms , Data Policy and Cookies
               Policy .

@@ -7,7 +7,6 @@ import {IoPaperPlaneOutline} from 'react-icons/io5'
 import {RiCompassDiscoverLine} from 'react-icons/ri'
 import {FiHeart} from 'react-icons/fi'
 import {IoPersonCircleSharp} from 'react-icons/io5'
-import Avatar from '@material-ui/core/Avatar'
 
 const Navbar = () => { 
   const [showSearch, setShowSearch] = useState(false)
@@ -31,22 +30,25 @@ const Navbar = () => {
             </input> <AiOutlineSearch className='search-icon'/>
           </div>
 
-          <div className='navbar-icons'>
-            <div className='media-search'>
+          <div className='media-search'>
             <button className='search-button' onClick={toggleSearch}><AiOutlineSearch className='media-icon'/></button>
-            {showSearch ? <input className='media-input'
+            {showSearch ? <div className='search-bar'><input className='media-input'
                 type='text'
                 name='query'
-                placeholder='Search'/> : null}
-                </div>
-            <Link to="/"><AiFillHome className='icon' /></Link>
-            <Link to="/" ><IoPaperPlaneOutline className='icon' /></Link>
-            <Link to="/" ><RiCompassDiscoverLine className='icon' /></Link>
-            <Link to="/" ><FiHeart className='icon' /></Link>
-            <IoPersonCircleSharp className='avatar' />
+                placeholder='Search'/></div> : null}
+             </div>   
+          
+          <div className='navbar-icons'>
+            
+            <Link to="/Profile"><AiFillHome className='icon' /></Link>
+            <Link to="/Profile" ><IoPaperPlaneOutline className='icon' /></Link>
+            <Link to="/Profile" ><RiCompassDiscoverLine className='icon' /></Link>
+            <Link to="/Profile" ><FiHeart className='icon' /></Link>
+            <Link to="/Profile" ><IoPersonCircleSharp className='avatar'/></Link>
             {/* <Avatar style={{ height: '20px', width: '20px' }}></Avatar> */}
             
             </div>
+            
           </div>
 
             

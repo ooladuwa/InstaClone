@@ -1,0 +1,68 @@
+
+.reg-logo{
+    max-width:100%;
+    object-fit: contain;
+
+}
+
+.photos-friends{
+    font-size:18px;
+    margin:0;
+}
+
+.form-reg-box{
+  width: 21.875rem;
+  height: 35.75rem;
+  margin:  0 10px;
+  margin-top: 2rem;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color: rgb(126, 122, 122);
+  font-weight:600;
+}
+
+.forms-box{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    margin-top:.5rem;
+    /* border: 2px solid red; */
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.register{
+    margin:2.5rem;
+    max-width:100%;
+    max-height:100%;
+}
+.reg-btn{
+   width:17rem;
+   display:flex;
+   padding:.5rem;
+   align-content: center;
+   justify-content: center;
+   color:white;
+   background-color: #0095F6;
+   border-radius:5px;
+   border:none;
+   margin:1rem 0;
+}
+
+.reg-inputs{
+    margin:.3rem 0;
+}
+
+.signUps{
+  
+}
+.logs{
+    margin-left:.7rem;
+
+}
